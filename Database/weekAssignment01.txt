@@ -1,0 +1,53 @@
+Section A: Definitions
+
+
+1. Database
+A database is a structured collection of data organized for easy retrieval and management. It consists of multiple tables that store information in an organized manner.
+
+2. Table
+Tables are the fundamental building blocks of a relational database. They hold data in rows and columns, where each row represents a unique record or instance, and each column represents a specific attribute or field within those records.
+
+3. Record
+Records, also known as tuples or instances, represent individual entries stored in a table's rows. Each record contains values for all fields defined by the corresponding table schema.
+
+4. Field
+Fields, also referred to as attributes or columns, define the structure of a table. Each field has a name and a predefined type (e.g., integer, string), which determines what kind of data can be stored in it.
+
+5. Primary Key
+The primary key is a unique identifier assigned to each record in a table. Its purpose is to ensure that no two records have identical keys, thus allowing efficient access to specific records when needed.
+
+6. SQL
+SQL is a standardized programming language used to interact with databases. It allows users to perform various operations such as creating, reading, updating, and deleting data from a database.
+
+7. Query
+Queries are statements written using SQL to retrieve, manipulate, or modify data within a database.
+
+8. Index
+An index is a data structure that improves the performance of queries on a database. By organizing data based on one or more fields, indices enable faster search times at the expense of additional storage space.
+
+9. Normalization
+Normalization refers to the process of structuring a database so that its design reduces redundancy and dependency among fields, thereby improving data integrity and ease of maintenance.
+
+10. Database Management System (DBMS)
+DBMS is software designed to create, manage, and maintain databases. Examples include MySQL, Oracle, Microsoft SQL Server, PostgreSQL, and others.
+
+
+
+Section B: Discussions
+
+
+1. Describe the purpose of a primary key in a database table and provide an example.
+
+A primary key is a column or set of columns in a database table that uniquely identifies each row or record in that table. It serves as a unique identifier for each record and ensures that no two records have the same key value. Primary keys are important because they allow for efficient access to specific records when needed and help maintain data integrity. For example, in a table of employees, the primary key could be the employee ID number, which would be unique for each employee and allow for easy retrieval of specific employee records.
+
+
+2. Explain the difference between a database management system (DBMS) and a database.
+
+A database management system (DBMS) is a software application that manages and controls access to a database. It facilitates the creation, organization, storage, modification, and retrieval of data within the database. On the other hand, a database is a collection of interconnected data that is typically stored on a computer or another type of hardware.
+An example of a DBMS is MySQL, which is a popular relational database management system (RDBMS). MySQL uses Structured Query Language (SQL) to manipulate data within a database. For instance, consider a MySQL database containing customer information. Within this database, there might be a 'customers' table with fields such as 'customer_id', 'name', 'address', and 'phone'. The 'primary_key' for this table would likely be 'customer_id', ensuring that each customer record has a unique identifier.
+
+
+3. Discuss in short, the importance of normalization in database design and provide an example of how it can improve data integrity.
+
+Normalization is an important process in database design that helps to eliminate data redundancy and improve data integrity. It involves organizing data into tables and establishing relationships between those tables according to rules designed to protect data. Normalization helps to ensure that each table contains only relevant data, and that data is stored in the correct table. By eliminating redundant data, normalization can help to reduce the chances of data error, optimize storage space, and improve data consistency.
+For example, consider a database containing customer information. Without normalization, the database might contain redundant data, such as multiple entries for the same customer. This redundancy can lead to inconsistencies and errors when updating or deleting data. By normalizing the database, the redundant data can be eliminated, and the data can be organized into separate tables based on their relationships. This can improve data integrity and make it easier to manage and analyze the data.
